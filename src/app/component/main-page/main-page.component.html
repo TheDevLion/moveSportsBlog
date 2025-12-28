@@ -1,0 +1,34 @@
+<header>
+    <img src="assets/logo.png" />
+    <h1>Sports</h1>
+</header>
+
+<div>
+
+    <section>
+        <h2>Próximos Eventos</h2>    
+        <div class="eventsContainer">
+            <div *ngFor="let event of upcomingEvents">
+                <app-info-card [event]="event" [preview]="preview"></app-info-card>
+            </div>
+        </div>
+    </section>
+
+
+    <hr />
+
+
+    <section>
+        <h2>Eventos Anteriores</h2>
+        <div class="eventsContainer">
+            <div *ngFor="let event of precedingEvents">
+                <app-info-card [event]="event" [preview]="preview"></app-info-card>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- <div *ngIf="!isGeneralView()">
+    <app-info-page [event]="selectedEvent" (eventChange)="changeEvent(this.emptyEvent)"></app-info-page>
+</div> -->

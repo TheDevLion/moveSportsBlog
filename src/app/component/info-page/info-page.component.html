@@ -1,0 +1,32 @@
+<header>
+    <img src="assets/logo.png" />
+    <h1>Sports</h1>
+</header>
+
+<div class="container">
+    <button (click)="this.selectEvent()">Voltar</button>
+
+    <div>
+        <h2>{{event ? event.title : ''}}</h2>
+
+        <p>Data: {{event ? formatTimestamp(event.date) : ''}}</p>
+
+        <p>Endereço: {{event ? event.address : ''}}</p>
+
+        <p *ngIf="event ? event.price : false">Preço: R$ {{event ? event.price : ''}}</p>
+        
+        <textarea [value]="getDescriptionWithoutLinks()" disabled [style]="countDescriptionLines()"></textarea>
+        
+        <div>
+            <p *ngFor="let link of linksValues">
+                <span>{{getTextLinkPart(link)}}</span>
+                <a [href]="getUrlLinkPart(link)" target="_blank">Clique aqui</a>
+            </p>
+        </div>
+        
+
+        <img [src]="event ? event.imgUrl : ''"/>
+
+        
+    </div>
+</div>

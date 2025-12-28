@@ -1,0 +1,6 @@
+<div class="container">
+    <p>{{event.title}}</p>
+    <p>{{this.formatTimestamp(event.date)}}</p>
+    <img [src]="event.imgUrl"/>
+    <button (click)="selectEvent()">Detalhes</button>
+</div>

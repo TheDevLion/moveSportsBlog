@@ -1,0 +1,67 @@
+div.container {
+    margin: 10px;
+}
+
+div.container div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.container p.date {
+    font-size: 1.3em;    
+}
+
+div.container textarea {
+    resize: none;
+    width: 80%;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    margin: 10px;    
+}
+
+
+img { width: 65%; border: 1px solid black; margin: 30px;}
+
+
+div.container > button {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: #000;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+div.container > button:hover {    
+    background: #eee;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background: #eee;
+    height: 100px;
+}
+
+header img {
+    width: 120px;
+    border: none;
+    margin: 0px;
+}
+
+section h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+div.eventsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

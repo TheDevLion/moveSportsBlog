@@ -1,5 +1,3 @@
-# Move Sports Blog
-
 ## Product description
 Move Sports Blog is a lightweight sports events showcase that lists upcoming activities, pricing, and status, pulling content from a Hygraph (GraphCMS) Hybrid GraphQL API. It is designed for quick browsing of confirmed or completed events while keeping draft content available for admins.
 
